@@ -14,7 +14,7 @@ public class TestLibrary{
     int e=-1;
     int f=-1;
     String checkOut;
-    int checkOut1;
+    int checkOut1;#This is a trial
     char person;
     book temp;
     boolean check;
