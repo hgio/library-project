@@ -3,9 +3,10 @@ import java.io.*;
 import java.util.Scanner;
 public class TestLibrary{
   public static void main(String[] args){
-    ArrayList<Book> books=new ArrayList();
-    ArrayList<Borrower> borrowers=new ArrayList();
-    //Here we will create a list of books from the .txt file
+    ArrayList<Book> books=new ArrayList<Book>();
+    ArrayList<Borrower> borrowers=new ArrayList<Borrower>();
+    Book create=new Book(1,"a","a","a","a");
+    books=create.makeBooks(Books.txt);
     int a;
     int b=0;
     int c=-1;
@@ -252,7 +253,7 @@ public class TestLibrary{
          System.out.println("Please enter the ISBN of the book");
         int e1=kb.nextInt();
         boolean f1=true;
-        temp=book(a1,b1,c1,d1,e1,f1);
+        temp=book(e1,a1,c1,b1);
       }
       if(b==2){
         d=-1;
