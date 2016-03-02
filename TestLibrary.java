@@ -30,7 +30,9 @@ public class TestLibrary{
     }
     if(person=='S'|| person=='T'){
     if(person=='S'){
-      //here we will set borrower to a list of all the students in the  txt file;
+      ArrayList <Borrower> borrowers=new ArrayList<Borrower>();
+      Student s=new Student(1," ");
+      borrowers = s.makeStudents(Students.txt);
       while(true){
       System.out.println("Please enter your OSIS");
       id=kb.nextInt();
@@ -44,7 +46,9 @@ public class TestLibrary{
       }
     }
     if(person=='T'){
-      //Here we will set borrower to a list of all the teachers in the .txt file;
+      ArrayList <Borrower> borrowers=new ArrayList<Borrower>();
+      Teacher t=new Teacher(1," ");
+      borrowers = t.makeTeachers(Teachers.txt);
       while(check==true){
       System.out.println("Please enter your ID");
       id=kb.nextInt();
