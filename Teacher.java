@@ -24,4 +24,14 @@ public class Teacher extends Borrower
   {
     //TO BE IMPLEMENTED
   }
+    public ArrayList<String> getBooksOut()
+  {
+    ArrayList<String> borrowedTitles = new ArrayList<String>(borrowed.size());
+    for(int i = 0; i < borrowedTitles.size(); i++)
+    {
+      borrowedTitles.set(i, borrowed.get(i).getTitle());
+    }
+    return borrowedTitles;
+  }
+  
 }
